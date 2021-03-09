@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: react-deployment
+spec:
+  selector:
+    matchLabels:
+      components: React
+
+  template:
+    metadata:
+      name: react-frontend
+      labels:
+        components: React
+
+    spec:
+      containers:
+        - name: react-frontend
+          image: judrin/react-frontend
+          ports:
+            - containerPort: 80
+  replicas: 5
+
+
