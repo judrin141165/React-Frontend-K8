@@ -19,6 +19,13 @@ spec:
           image: judrin/react-frontend
           ports:
             - containerPort: 80
+          volumeMounts:
+            - mountPath: /data
+              name: data
+      volumes:
+        - name: data
+          persistentVolumeClaim:
+            claimName: pvc1
   replicas: 5
 
 
