@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig host="54.88.25.108" id="447c6f5b-79c9-4270-933f-ce5748fa2dba" keyPath="C:\Users\Administrator\Documents\AWX_Ansible_tower.pem" port="22" nameFormat="DESCRIPTIVE" username="ubuntu" />
+    </configs>
+  </component>
+</project>
