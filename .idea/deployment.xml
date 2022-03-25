@@ -5,7 +5,7 @@
       <paths name="k8_sandbox">
         <serverdata>
           <mappings>
-            <mapping deploy="/React-Frontend/React-FrontendK8" local="$PROJECT_DIR$" web="/" />
+            <mapping deploy="/jenkins" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
