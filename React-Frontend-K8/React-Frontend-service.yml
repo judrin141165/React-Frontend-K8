@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: reactservice
+spec:
+  type: NodePort
+  ports:
+    - port: 85
+      targetPort: 80 
+      nodePort: 30007
+
+  selector:
+    components: React
+
+
