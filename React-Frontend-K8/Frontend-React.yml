@@ -25,12 +25,29 @@ spec:
           image: judrin/react-frontend
           ports:
             - containerPort: 80
+          command: ['sh','-c','while true: do echo logs data > output/output.log:sleep 5:done']
+          resources:
+            requests:
+              cpu: "250m"
+              memory: "250Mi"
+            limits:
+              cpu: "500"
+              memory: "256Mi"
           volumeMounts:
-            - mountPath: /var/lib/postgresql/data
-              name: postgress storage
-              subPath: postgres
+            - mountPath: /output
+              name: shared-storage
+        - name: redis
+          image: redis:latest
+
+
+          ports:
+            - containerPort: 6379
+          volumeMounts:
+            - mountPath: /var/lib/redis/data
+              name: shared-storage
+              subPath: redis
       volumes:
-        - name: postgress storage
+        - name: shared-storage
           persistentVolumeClaim:
             claimName: pvc1
   replicas: 5

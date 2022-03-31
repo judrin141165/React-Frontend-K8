@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="53d38826-5f32-4fef-92a9-65d37996aad8" name="k8_sandbox">
-        <fileTransfer rootFolder="/home/bitnami" accessType="SFTP" host="54.88.25.108" port="22" sshConfigId="447c6f5b-79c9-4270-933f-ce5748fa2dba" sshConfig="ubuntu@54.88.25.108:22 key" keyPair="true">
+        <fileTransfer rootFolder="/home/ec2-user" accessType="SFTP" host="52.52.88.40" port="22" sshConfigId="447c6f5b-79c9-4270-933f-ce5748fa2dba" sshConfig="ec2-user@52.52.88.40:22 key" keyPair="true">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

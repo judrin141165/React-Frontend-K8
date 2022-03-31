@@ -2,7 +2,7 @@
 <project version="4">
   <component name="SshConfigs">
     <configs>
-      <sshConfig host="54.88.25.108" id="447c6f5b-79c9-4270-933f-ce5748fa2dba" keyPath="C:\Users\Administrator\Documents\AWX_Ansible_tower.pem" port="22" nameFormat="DESCRIPTIVE" username="ubuntu" />
+      <sshConfig host="52.52.88.40" id="447c6f5b-79c9-4270-933f-ce5748fa2dba" keyPath="C:\Users\Administrator\Downloads\Tele-It.pem" port="22" nameFormat="DESCRIPTIVE" username="ec2-user" />
     </configs>
   </component>
 </project>
