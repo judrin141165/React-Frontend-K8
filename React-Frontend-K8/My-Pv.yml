@@ -6,12 +6,16 @@ spec:
   accessModes:
     - ReadWriteOnce
   storageClassName: ssd
+
   capacity:
     storage: 1Gi
 
+
+
   persistentVolumeReclaimPolicy: Retain
   awsElasticBlockStore:
-    volumeID: vol-083d36f8f2fe23ab2
+    volumeID: vol-027c7d7b1d91892c0
+
 
 
 

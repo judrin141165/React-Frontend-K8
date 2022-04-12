@@ -6,6 +6,7 @@ spec:
   accessModes:
      - ReadWriteOnce
   storageClassName: ssd
+
   resources:
     requests:
       storage: 500Mi

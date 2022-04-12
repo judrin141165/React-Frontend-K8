@@ -8,6 +8,7 @@ metadata:
 spec:
 
   containers:
+
     - name: react-frontend
       image: judrin/react-frontend
       ports:
